@@ -36,6 +36,17 @@ const EvolutionChainSchema = new mongoose.Schema({
   },
 });
 
+const moveSchema = new mongoose.Schema({
+  level: Number,
+  name: String,
+  category: String,
+  type: String,
+  accuracy: Number,
+  pp: Number,
+  power: Number,
+  description: String,
+});
+
 export const PokemonSchema = new mongoose.Schema({
   name: { type: String, unique: true, required: true },
   sprites: {
@@ -56,7 +67,7 @@ export const PokemonSchema = new mongoose.Schema({
   genus: String,
   height: Number,
   weight: Number,
-  abilities: [String],
+  abilities: [{ name: String, description: String, is_hidden: Boolean, slot: Number }],
   base_experience: Number,
   growth_rate: String,
   egg_groups: [String],
@@ -65,8 +76,8 @@ export const PokemonSchema = new mongoose.Schema({
   generation: Number,
   stats: [{ base_stat: Number, effort: Number, name: String }],
   evolution_chain: EvolutionChainSchema,
-  held_items: [String],
-  moves: [String],
+  held_items: [{ name: String, description: String }],
+  moves: [moveSchema],
   pokedex_entry: String,
   shape: String,
 });

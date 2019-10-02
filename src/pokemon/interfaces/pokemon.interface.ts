@@ -35,6 +35,17 @@ interface EvolutionChain {
   };
 }
 
+interface Move {
+  readonly level: number;
+  readonly name: string;
+  readonly category: string;
+  readonly type: string;
+  readonly accuracy: number;
+  readonly pp: number;
+  readonly power: number;
+  readonly description: string;
+}
+
 export interface Pokemon extends Document {
   readonly name: string;
   readonly sprites: {
@@ -55,7 +66,12 @@ export interface Pokemon extends Document {
   readonly genus: string;
   readonly height: number;
   readonly weight: number;
-  readonly abilities: string[];
+  readonly abilities: Array<{
+    name: string;
+    description: string;
+    is_hidden: boolean;
+    slot: number;
+  }>;
   readonly base_experience: number;
   readonly growth_rate: string;
   readonly egg_groups: string[];
@@ -64,8 +80,8 @@ export interface Pokemon extends Document {
   readonly generation: number;
   readonly stats: Array<{ base_stat: number; effort: number; name: string }>;
   readonly evolution_chain: EvolutionChain;
-  readonly held_items: string[];
-  readonly moves: string[];
+  readonly held_items: Array<{ name: string; description: string; }>;
+  readonly moves: Move[];
   readonly pokedex_entry: string;
   readonly shape: string;
 }
