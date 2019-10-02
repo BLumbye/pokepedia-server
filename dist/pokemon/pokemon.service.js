@@ -21,11 +21,11 @@ let PokemonService = class PokemonService {
         this.pokemonModel = pokemonModel;
     }
     async getAllPokemon() {
-        const pokemons = await this.pokemonModel.find().exec();
+        const pokemons = await this.pokemonModel.find().select('name sprites id type generation').exec();
         return pokemons;
     }
     async getPokemon(pokemonID) {
-        const pokemon = await this.pokemonModel.find({ id: pokemonID }).exec();
+        const pokemon = await this.pokemonModel.findOne({ id: pokemonID }).exec();
         return pokemon;
     }
 };

@@ -1126,23 +1126,31 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon.interface.ts": {
-        "version": "64277d8a51a92af5f1167ae3c1644c2a9dbcf44b2e6be81e786d197ced0a5ee3",
-        "signature": "a2ceb87be5f4bca34b0493158cf344806ff6e4b5ff5eef795a7ed7093e3f0add"
+        "version": "44b2606599af116e58fca7971998a77fde50a202a58847288ebd1a388bf708b5",
+        "signature": "d5e624a4fd93684bbea6bc6274c6c97bd854c460a783af97515b4e25ab274b0a"
+      },
+      "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon-list.interface.ts": {
+        "version": "4585b9a1b54e2f2f18887c13fa3fe08c8273bf5829b1e35cdf8168857f8086b7",
+        "signature": "6e722ba45ba257d5ebacf94fd5c371caa3de2b8b56d4a6ffb39a66725aba2362"
       },
       "d:/programmering/pokepedia-server/src/pokemon/dto/pokemon.dto.ts": {
         "version": "111c43e7d794cd081b8658009c974ff50a85c583df59eaa107e1951e69f936e3",
         "signature": "3cb3087321e29888feadfc1ac253e79dc795033c4fd7c6dc895d5204483c32e3"
       },
+      "d:/programmering/pokepedia-server/src/pokemon/dto/pokemon-list.dto.ts": {
+        "version": "21a00acfb25123fd65d1812a1a3b55ba84b5815ac1a0b55441df224f38fb8e64",
+        "signature": "10a2c648dffbe3ed87c59e25825a74d8f7b42fa4d992f5191c5adb0917764c4f"
+      },
       "d:/programmering/pokepedia-server/src/pokemon/pokemon.service.ts": {
-        "version": "8c4747f235ba4efed4465fbca221b71e5066c2ab61c677c6db3c94fdb57b2be0",
-        "signature": "fd22924487809ef0211f42ca35722c48a3828d69cce53e92517b19178b805e5f"
+        "version": "7ee58a0a56b243346a63f621429694d92130a10289deeac75b4eeea84609c196",
+        "signature": "eeb6c323d6b9c86ef4a43f7c5d05f58fdecd40f9562f3f6ef867c5a600992b6d"
       },
       "d:/programmering/pokepedia-server/src/pokemon/pokemon.controller.ts": {
         "version": "911400f34826d6656fc93064516d7d84f651b24dabadbb5a7c56b41bd65f027b",
         "signature": "a5a24b4829c38c783b1146e6562fc9270417d066c6fbfc447b6eff33060ae448"
       },
       "d:/programmering/pokepedia-server/src/pokemon/schemas/pokemon.schema.ts": {
-        "version": "3986bffa6aa58e311319ac80171e16b9fd7007549e0c4db8c1769c6d2f3ef97c",
+        "version": "fcab3d6fdd684989dc7a808783e6d21344f6a519e74ed4efb543178c01a8145e",
         "signature": "688341af657f2cd4a1fb33dff6e14c3e6905f620ead29041a5e6731bfc01e1b2"
       },
       "d:/programmering/pokepedia-server/src/pokemon/pokemon.module.ts": {
@@ -3062,7 +3070,15 @@
         "d:/programmering/pokepedia-server/node_modules/@types/node/util.d.ts",
         "d:/programmering/pokepedia-server/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon-list.interface.ts": [
+        "d:/programmering/pokepedia-server/node_modules/@types/node/util.d.ts",
+        "d:/programmering/pokepedia-server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "d:/programmering/pokepedia-server/src/pokemon/dto/pokemon.dto.ts": [
+        "d:/programmering/pokepedia-server/node_modules/@types/node/util.d.ts",
+        "d:/programmering/pokepedia-server/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "d:/programmering/pokepedia-server/src/pokemon/dto/pokemon-list.dto.ts": [
         "d:/programmering/pokepedia-server/node_modules/@types/node/util.d.ts",
         "d:/programmering/pokepedia-server/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3070,7 +3086,9 @@
         "d:/programmering/pokepedia-server/node_modules/@nestjs/common/index.d.ts",
         "d:/programmering/pokepedia-server/node_modules/@nestjs/mongoose/index.d.ts",
         "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon.interface.ts",
+        "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon-list.interface.ts",
         "d:/programmering/pokepedia-server/src/pokemon/dto/pokemon.dto.ts",
+        "d:/programmering/pokepedia-server/src/pokemon/dto/pokemon-list.dto.ts",
         "d:/programmering/pokepedia-server/node_modules/@types/node/util.d.ts",
         "d:/programmering/pokepedia-server/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3799,7 +3817,8 @@
         "d:/programmering/pokepedia-server/src/pokemon/pokemon.service.ts"
       ],
       "d:/programmering/pokepedia-server/src/pokemon/pokemon.service.ts": [
-        "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon.interface.ts"
+        "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon.interface.ts",
+        "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon-list.interface.ts"
       ],
       "d:/programmering/pokepedia-server/node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
         "d:/programmering/pokepedia-server/node_modules/@nestjs/common/index.d.ts",
@@ -5750,7 +5769,9 @@
       "d:/programmering/pokepedia-server/node_modules/@nestjs/mongoose/dist/index.d.ts",
       "d:/programmering/pokepedia-server/node_modules/@nestjs/mongoose/index.d.ts",
       "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon.interface.ts",
+      "d:/programmering/pokepedia-server/src/pokemon/interfaces/pokemon-list.interface.ts",
       "d:/programmering/pokepedia-server/src/pokemon/dto/pokemon.dto.ts",
+      "d:/programmering/pokepedia-server/src/pokemon/dto/pokemon-list.dto.ts",
       "d:/programmering/pokepedia-server/src/pokemon/pokemon.service.ts",
       "d:/programmering/pokepedia-server/src/pokemon/pokemon.controller.ts",
       "d:/programmering/pokepedia-server/src/pokemon/schemas/pokemon.schema.ts",
