@@ -6,7 +6,7 @@ import { PokemonModule } from './pokemon/pokemon.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://admin:pCt2RQ@18.195.141.149:27017/pokepedia?authSource=admin', { useNewUrlParser: true }),
+    MongooseModule.forRoot('mongodb://localhost/pokepedia', { useNewUrlParser: true }),
     PokemonModule,
   ],
   controllers: [AppController],
